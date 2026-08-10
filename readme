@@ -1,0 +1,42 @@
+# Task 2: Fetch Data from an API and Display It
+
+**Internship:** Software Development | SaiKet Systems
+**Language:** Python 3
+
+## Objective
+Create a program that retrieves data from a public API and presents it in a user-friendly format.
+
+## API Used
+[JokeAPI](https://v2.jokeapi.dev/) — a free public API, no API key required, `safe-mode` enabled to filter inappropriate content.
+
+## Features
+- Fetches a random joke (single-line or setup/punchline format) using `requests`
+- Parses JSON response and extracts relevant fields
+- Handles network errors and unexpected response formats gracefully
+- Clean, formatted console output
+- Option to fetch another joke repeatedly
+
+## How to Run
+```bash
+pip install requests
+python task2_api_fetch.py
+```
+
+## Sample Output
+```
+Fetching a fresh joke for you...
+
+==================================================
+           RANDOM JOKE OF THE DAY
+==================================================
+Setup   : Why don't scientists trust atoms?
+Punchline: Because they make up everything!
+==================================================
+
+Want another joke? (y/n):
+```
+
+## Requirements
+- Python 3.x
+- `requests` library (`pip install requests`)
+- Active internet connection
